@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/views/login.css">
+    <title>로그인</title>
+</head>
+<body>
+    <div class="top">
+        <div class="topbox">
+            <div class="btnwrap hide">
+                <button type="button" onclick="history.back();" class="toparrow">
+                    <img class="arrow" src="/views/images/arrow.png">
+                </button>
+            </div>
+            <div class="topname">아무 말 대잔치</div>
+            <!-- <div class="box hide">
+                <img class="profile" src="/views/images/profileimg.png">
+            </div> -->
+            <div class="dropdown hide">
+                <button class="dropdown_btn" id="dropdown_btn"><img class="profile" src="/views/images/profileimg.png"></button>
+                <div class="dropdown_options" id="dropdown_op">
+                    <button type="button" class="go_btn" id="go_editprofile_btn">회원정보수정</button>
+                    <button type="button" class="go_btn" id="go_editpwd_btn">비밀번호수정</button>
+                    <button type="button" class="go_btn" id="go_login_btn">로그아웃</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style = "width:100%; height:1px; background-color:black; border: 0px; margin: 0px;">
+    <div class="wrap">
+        <div class="loginform"> 
+            <div>
+                <div class="login">로그인</div>
+            </div>
+            <form method="get" class="input_wrap">
+                <h4 class="logintext">이메일</h4>
+                <input type="email" placeholder="이메일을 입력하세요" class="inlogin" id="email1" onchange="bothcheck()">
+                <h4 class="logintext">비밀번호</h4>
+                <input type="password" placeholder="비밀번호를 입력하세요" class="inlogin" id="password" onchange="bothcheck()">
+                <h6 class="helptext" id="login_help">* helper text</h6>
+                <input type="button" value="로그인" class="submitlog" id="login_btn" onclick='login()'>
+                <div class="center"><a href="/joinmember">회원가입</a></div>
+            </form>
+        </div>
+    </div>
+    <script src="/views/login.js"></script>
+</body>

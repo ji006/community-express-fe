@@ -1,0 +1,213 @@
+/* 폰트 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+:root{
+    --main-bg-color: #f4f5f7;
+    --text-color: black;
+    --box-bg-color: #ffffff;
+    --btn-bg-color: #aca0eb;
+    --help-text-color: #ff0000;
+    --box-text-color: #ffffff;
+    --gray-bg-color: #d9d9d9;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0px;
+}
+.top{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 104px;
+}
+.topbox{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.btnwrap{
+    width: 36px;
+    border: 0px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 133px;
+}
+.toparrow{
+    width: 25px;
+    height: 25px;
+    border: 0px;
+}
+.toparrow .arrow{
+    width: 100%;
+    height: 100%;
+}
+.topname {
+    color: black;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: "Hi Melody", sans-serif;
+    background-color: var(--main-bg-color);
+    border: 0px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    align-content: center;
+}
+.dropdown_btn{
+    width: 36px;
+    height: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin-left: 136px;
+    border: none;
+    background-color: var(--main-bg-color);
+
+}
+.dropdown_options {
+    position: absolute;
+    background: #D9D9D9;
+    text-align: center;
+    width: 115px;
+    height: 105px;
+    top: 79%;
+    left: 31%;
+    display: none;
+}
+.dropdown button{
+    height: 35px;
+    padding: 10px 24px 10px 24px;
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-color: unset;
+    border: 0px;
+    width: 100%;
+}
+.go_btn:hover{
+    background-color: #E9E9E9;
+}
+.profile{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 34%;
+    right: 7%;
+    border-radius: 50%;
+}
+.hide{
+    visibility: hidden;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+}
+.wrap_box{
+    width: 592px;
+    display: flex;
+    flex-direction: column;
+}
+.title_box{
+    width: 592px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.2px;
+    width: 570px;
+}
+.content_box{
+    width: 592px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content_box .title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    margin-top: 26px;
+}
+.before_title{
+    border: 0px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    width: 570px;
+    background-color: var(--main-bg-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.56px;
+}
+.before_content{
+    border: 0px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    width: 570px;
+    height: 250px;
+    background-color: var(--main-bg-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.15px;
+    padding: 0px;
+}
+.uploadimg_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.helptext{
+    height: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: var(--help-text-color);
+    margin-bottom: 4px;
+    margin-top: 4px;
+    width: 570px;
+}
+.upload{
+    width: 560px;
+}
+.title_img{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.9px;
+    color: var(--text-color);
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+.modifybtn{
+    display: flex;
+    justify-content: center;
+}
+.editprofile{
+    color: var(--box-text-color);
+    background-color: var(--btn-bg-color);
+    width: 355px;
+    height: 33px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.71px;
+    text-align: center;
+    margin-top: 27px;
+    padding: 0px;
+}

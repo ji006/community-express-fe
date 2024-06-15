@@ -1,0 +1,199 @@
+/* 폰트 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+:root{
+    --main-bg-color: #f4f5f7;
+    --text-color: black;
+    --box-bg-color: #ffffff;
+    --btn-bg-color: #aca0eb;
+    --help-text-color: #ff0000;
+    --box-text-color: #ffffff;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0px;
+}
+.top{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 104px;
+}
+.topbox{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.btnwrap{
+    width: 36px;
+    border: 0px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 133px;
+}
+.hide{
+    visibility: hidden;
+}
+.toparrow{
+    width: 25px;
+    height: 25px;
+    border: 0px;
+}
+.toparrow .arrow{
+    width: 100%;
+    height: 100%;
+}
+.topname {
+    color: black;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: "Hi Melody", sans-serif;
+    background-color: var(--main-bg-color);
+    border: 0px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    align-content: center;
+}
+.dropdown_btn{
+    width: 36px;
+    height: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin-left: 136px;
+    border: none;
+    background-color: var(--main-bg-color);
+
+}
+.dropdown_options {
+    position: absolute;
+    background: #D9D9D9;
+    text-align: center;
+    width: 115px;
+    height: 105px;
+    top: 79%;
+    left: 31%;
+    display: none;
+}
+.dropdown button{
+    height: 35px;
+    padding: 10px 24px 10px 24px;
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-color: unset;
+    border: 0px;
+    width: 100%;
+}
+.go_btn:hover{
+    background-color: #E9E9E9;
+}
+.profile{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 34%;
+    right: 7%;
+    border-radius: 50%;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+}
+.pagetextbox{
+    width: 355px;
+    text-align: center;
+    margin-top: 161px;
+    margin-bottom: 94px;
+}
+.pagetext{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.19px;
+}
+.info{
+    width: 355px;
+}
+.newpwd{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.9px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.password{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.71px;
+}
+.inlogin{
+    width: 353px;
+    height: 31px;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.71px;
+    padding: 0px;
+}
+.helptext{
+    height: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: var(--help-text-color);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.editprofile{
+    color: var(--box-text-color);
+    background-color: var(--btn-bg-color);
+    width: 355px;
+    height: 33px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.71px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px;
+}
+/*토스트 메시지*/
+#tost_message {
+    opacity: 0;
+    position: fixed;
+    bottom: 194px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 12px 20px 12px 20px;
+    background: #ACA0EB;
+    border-radius: 30px;
+    color: #fff;
+    width: 70px;
+    height: 29px;
+    transition: all 0.5s;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+    align-content: center;
+}
+/*토스트 메시지 활성화 되었을 때*/
+#tost_message.active {
+    opacity: 100%;
+    bottom: 194px;
+}

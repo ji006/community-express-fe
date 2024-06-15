@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/views/writepost.css">
+    <title>게시글 작성</title>
+</head>
+<body>
+    <div class="top">
+        <div class="topbox">
+            <div class="btnwrap">
+                <button type="button" onclick="history.back();" class="toparrow">
+                    <img class="arrow" src="/views/images/arrow.png">
+                </button>
+            </div>
+            <button class="topname" onclick="goto_list()">아무 말 대잔치</button>
+            <div class="dropdown">
+                <button class="dropdown_btn" id="dropdown_btn"><img class="profile" id="profile" src="/views/images/profileimg.png"></button>
+                <div class="dropdown_options" id="dropdown_op">
+                    <button type="button" class="go_btn" id="go_editprofile_btn">회원정보수정</button>
+                    <button type="button" class="go_btn" id="go_editpwd_btn">비밀번호수정</button>
+                    <button type="button" class="go_btn" id="go_login_btn">로그아웃</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style = "width:100%; height:1px; background-color:black; border: 0px; margin: 0px;">
+    <div class="wrap">
+        <div class="wrap_box">
+            <div class="title_box">
+                <div class="title">게시글 작성</div>
+            </div>
+            <form method="post" class="content_box">
+                <div class="title">제목*</div>
+                <hr style = "width: 100%; background-color: black; border: 1px; height: 1px; margin: 0px; opacity: 16%;;">
+                <input type="textarea" style="resize: none;" placeholder="제목을 입력해주세요. (최대 26글자)" class="get_title" id="title_get" onkeyup="write_final()" maxlength="26">
+                <hr style = "width: 100%; background-color: black; border: 1px; height: 1px; margin: 0px; opacity: 16%;;">
+                <div class="title">내용*</div>
+                <hr style = "width: 100%; background-color: black; border: 1px; height: 1px; margin: 0px; opacity: 16%;;">
+                <textarea type="textarea" style="resize: none;" placeholder="내용을 입력해주세요." class="write_content" id="content_get" onkeyup="write_final()"></textarea>
+                <hr style = "width: 100%; background-color: black; border: 1px; height: 1px; margin: 0px; opacity: 16%;;">
+                <div class="uploadimg_box"> 
+                    <div class="helptext" id="helptext">* helper text</div>   
+                        <div class="upload">
+                            <div class="title_img">이미지</div>
+                            <input type="file" id="change" accept="image/*" onchange="modify_profile(this)">
+                        </div>
+                    </div>
+                <div class="modifybtn">
+                    <input type="button" value="완료" class="editprofile" id="profile_edit_btn" onclick="submit_post()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/views/writepost.js"></script>
+</body>

@@ -1,0 +1,198 @@
+/* 폰트 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+:root{
+    --main-bg-color: #f4f5f7;
+    --text-color: black;
+    --box-bg-color: #ffffff;
+    --btn-bg-color: #aca0eb;
+    --help-text-color: #ff0000;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0px;
+}
+.top{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 104px;
+}
+.topbox{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.hide{
+    visibility: hidden;
+}
+.btnwrap{
+    width: 36px;
+    border: 0px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 133px;
+}
+.toparrow{
+    width: 25px;
+    height: 25px;
+    border: 0px;
+}
+.toparrow .arrow{
+    width: 100%;
+    height: 100%;
+}
+.topname {
+    color: black;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: "Hi Melody", sans-serif;
+    background-color: var(--main-bg-color);
+    border: 0px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    align-content: center;
+}
+.dropdown_btn{
+    width: 36px;
+    height: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin-left: 136px;
+    border: none;
+    background-color: var(--main-bg-color);
+
+}
+.dropdown_options {
+    position: absolute;
+    background: #D9D9D9;
+    text-align: center;
+    width: 115px;
+    height: 105px;
+    top: 79%;
+    left: 31%;
+    display: none;
+}
+.dropdown button{
+    height: 35px;
+    padding: 10px 24px 10px 24px;
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-color: unset;
+    border: 0px;
+    width: 100%;
+}
+.go_btn:hover{
+    background-color: #E9E9E9;
+}
+.profile{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 34%;
+    right: 7%;
+    border-radius: 50%;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+}
+.explain{
+    text-align: center;
+    margin-top: 40px;
+}
+.write{
+    color: #ffffff;
+    background-color: var(--btn-bg-color);
+    width: 138px;
+    height: 39px;
+    border: 0px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.04px;
+    padding: 0px;
+    margin-left: auto;
+    margin-top: 24px;
+    margin-right: 4px;
+}
+.write:hover{
+    background-color: #7F6AEE;
+}
+.listbox{
+    background-color: var(--box-bg-color);
+    width: 592px;
+    height: 204px;
+    border-radius: 16px;
+    margin-top: 23px;
+}
+.writetop{
+    margin: 27px;
+    margin-top: 33px;
+    margin-bottom: 30px;
+}
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: var(--text-color);
+    display: inline-block;
+    width: 540px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.num{
+    display: flex;
+    margin-top: 12px;
+}
+.num_count{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+.time{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: var(--text-color);
+    margin-left: auto;
+}
+.writer{    
+    display: flex;
+    margin-left: 3px;
+}
+.boxchange{
+    width: 36px;
+    height: 36px; 
+    border-radius: 70%;
+    overflow: hidden;
+    background-color:#d9d9d9; 
+    margin:20px;
+}
+.boxchange img{
+    width: 36px;
+    height: 36px;
+}
+.writername{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19.5px;
+    margin-top: 28px;
+}
