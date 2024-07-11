@@ -1,12 +1,25 @@
 /* 폰트 추가 */
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
-
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 :root{
-    --main-bg-color: #f4f5f7;
+    --main-bg-color: #edf6ff;
     --text-color: black;
     --box-bg-color: #ffffff;
-    --btn-bg-color: #aca0eb;
+    --able-btn-color: #8ab3ff;
     --help-text-color: #ff0000;
+    --box-text-color: #ffffff;
+    --disabled-btn-color: #c7dbff;
 }
 body {
     display: flex;
@@ -52,9 +65,9 @@ body {
 .topname {
     color: black;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 32px;
-    font-family: "Hi Melody", sans-serif;
+    font-family: 'MangoDdobak-B';
     background-color: var(--main-bg-color);
     border: 0px;
 }
@@ -106,19 +119,71 @@ body {
     right: 7%;
     border-radius: 50%;
 }
+.bottom{
+    display: flex;
+    /* flex-direction: column; */
+    width: 600px;
+    gap: 40px;
+}
 .wrap{
     display: flex;
     flex-direction: column;
     width: 600px;
     align-items: center;
 }
-.explain{
-    text-align: center;
-    margin-top: 40px;
+.leftpost_wrap{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    align-items: center;
 }
-.write{
+.right_wrap{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.myinfo_wrap{
+    background-color: white;
+    height: 200px;
+    margin-top: 23px;
+}
+.btn-wrap{
+    width: 100%;
+    display: flex;
+}
+.btn-button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.btn-image {
+    width: 123px;
+    height: auto;
+}
+
+.btn-button:hover {
+    opacity: 0.8; /* Makes the button slightly transparent on hover */
+    transition: opacity 0.3s ease
+}
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dovemayo_gothic';
+    color: white;
+    font-size: 17px; 
+    pointer-events: none;
+}
+/* .write{
     color: #ffffff;
-    background-color: var(--btn-bg-color);
+    background-color: var(--able-btn-color);
     width: 138px;
     height: 39px;
     border: 0px;
@@ -127,19 +192,20 @@ body {
     font-weight: 700;
     line-height: 25.04px;
     padding: 0px;
-    margin-left: auto;
     margin-top: 24px;
-    margin-right: 4px;
+    margin-right: 10px;
+    margin-left: auto;
+    ///  align-self: center;
 }
 .write:hover{
-    background-color: #7F6AEE;
-}
+    background-color: #8ab3ff;
+} */
 .listbox{
     background-color: var(--box-bg-color);
-    width: 592px;
+    width: 100%;
     height: 204px;
     border-radius: 16px;
-    margin-top: 23px;
+    margin-top: 20px;
 }
 .writetop{
     margin: 27px;
@@ -152,7 +218,6 @@ body {
     line-height: 31.2px;
     color: var(--text-color);
     display: inline-block;
-    width: 540px;
     white-space: nowrap;
     overflow: hidden;
 }

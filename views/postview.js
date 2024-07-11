@@ -33,7 +33,7 @@ credentials:'include',
                     <img class="arrow" src="/views/images/arrow.png">
                 </button>
             </div>
-            <button class="topname" onclick="goto_list()">아무 말 대잔치</button>
+            <button class="topname" onclick="goto_list()">고민이 먼지</button>
             <div class="dropdown">
                 <button class="dropdown_btn" id="dropdown_btn"><img class="profile" src="${user.profile}" onclick="dropdown()"></button>
                 <div class="dropdown_options" id="dropdown_op">
@@ -299,10 +299,10 @@ const write_comment = () => {
 
   if (commentbox == "") {
     comment_btn.disabled = true;
-    comment_btn.style.cssText = "background-color: #ACA0EB";
+    comment_btn.style.cssText = "background-color: #c7dbff";
   } else {
     comment_btn.disabled = false;
-    comment_btn.style.cssText = "background-color: #7F6AEE";
+    comment_btn.style.cssText = "background-color: #8ab3ff";
   }
 };
 

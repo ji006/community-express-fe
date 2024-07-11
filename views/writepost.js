@@ -52,11 +52,11 @@ const write_final = () => {
 
   if (title == "" || content == "") {
     // edit_btn_style.disabled = true;
-    edit_btn_style.style.cssText = "background-color: #ACA0EB";
+    edit_btn_style.style.cssText = "background-color: #c7dbff";
   } else {
     // edit_btn_style.disabled = false;
     helptext.innerText = "";
-    edit_btn_style.style.cssText = "background-color: #7F6AEE";
+    edit_btn_style.style.cssText = "background-color: #8ab3ff";
   }
 };
 const getFormattedDateTime = () => {

@@ -1,0 +1,81 @@
+/* 폰트 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --main-bg-color: #f9edff;
+    --text-color: black;
+    --box-bg-color: #ffffff;
+    --able-btn-color: #c7dbff;
+    --help-text-color: #ff0000;
+    --box-text-color: #ffffff;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0px;
+}
+.namebox {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.name {
+    font-size: 30px;
+    color: var(--text-color);
+    font-family: 'MangoDdobak-B';
+
+}
+
+.container {
+    display: flex;
+    gap: 100px; 
+    justify-content: center;
+    align-items: center;
+}
+.login-button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.login-image {
+    width: 150px;
+    height: auto;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.login-image:hover {
+    transform: scale(1.2);
+}
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dovemayo_gothic';
+    color: white;
+    font-size: 16px; 
+    pointer-events: none;
+}

@@ -13,10 +13,10 @@ async function allcheck() {
     check_checkpwd() == true &&
     (await check_name()) == true
   ) {
-    submit_btn.style.cssText = "background-color: #7F6AEE";
+    submit_btn.style.cssText = "background-color: #8ab3ff";
     submit_btn.disabled = false;
   } else {
-    submit_btn.style.cssText = "background-color: #ACA0EB";
+    submit_btn.style.cssText = "background-color: #c7dbff";
     submit_btn.disabled = true;
   }
 }

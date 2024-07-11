@@ -1,13 +1,19 @@
 /* 폰트 추가 */
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
-
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 :root{
-    --main-bg-color: #f4f5f7;
+    --main-bg-color: #f9edff;
     --text-color: black;
     --box-bg-color: #ffffff;
-    --btn-bg-color: #aca0eb;
+    --able-btn-color: #8ab3ff;
     --help-text-color: #ff0000;
     --box-text-color: #ffffff;
+    --disabled-btn-color: #c7dbff;
 }
 
 body {
@@ -41,9 +47,10 @@ body {
     margin-right: 133px;
 }
 .toparrow{
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border: 0px;
+    background: bottom;
 }
 .toparrow .arrow{
     width: 100%;
@@ -52,18 +59,10 @@ body {
 .topname {
     color: black;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 32px;
     padding-top: 36px;
-    font-family: "Hi Melody", sans-serif;
-}
-.topname {
-    color: black;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 32px;
-    padding-top: 36px;
-    font-family: "Hi Melody", sans-serif;
+    font-family: 'MangoDdobak-B';
 }
 .dropdown {
     display: inline-block;
@@ -122,16 +121,24 @@ body {
     width: 600px;
     align-items: center;
 }
-
+.white-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: #fdfaff;
+    margin-top: 100px;
+    border-radius: 30px;
+}
 .uploadimg{
     width: 355px;
 }
 .pagetext{
     text-align: center;
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 30px;
     line-height: 38.19px;
-    margin-top: 161px;
+    margin-top: 30px;
 }
 .info{
     width: 355px;
@@ -145,14 +152,19 @@ body {
     margin-top: 4px;
 }
 .inlogin{
-    width: 353px;
-    height: 31px;
-    border-radius: 4px;
-    border: 1px solid;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.71px;
-    padding: 0px;
+        height: 31px;
+        padding: 0px;
+        width: 349px;
+        border-radius: 35px;
+        border: 1px solid;
+}
+.profileimg_text{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.9px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    margin-top: 15px;
 }
 .helptext{
     height: 15px;
@@ -170,12 +182,13 @@ body {
 .boxchange {
     border-radius: 70%;
     overflow: hidden;
-    background-color: #d9d9d9;
+    background-color: #ffffff;
     margin: 20px;
     width: calc(149px - 120px);
     height: calc(149px - 120px);
     padding: 60px;
     position: relative;
+    border: 1px solid var(--able-btn-color);
 }
 .profileimg{
     width: 149px;
@@ -214,11 +227,11 @@ body {
 }
 .submitprofile{
     color: var(--box-text-color);
-    background-color: var(--btn-bg-color);
+    background-color: var(--disabled-btn-color);
     width: 355px;
     height: 33px;
     border: 0px;
-    border-radius: 4px;
+    border-radius: 12px;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.71px;
@@ -227,8 +240,9 @@ body {
     padding: 0px;
 }
 .back{
-    text-align: center; 
+    text-align: center;
     margin-top: 12px;
+    margin-bottom: 20px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.71px;

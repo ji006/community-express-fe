@@ -65,7 +65,7 @@ const check_pwd_valid = () => {
   const newpwd_btn = document.querySelector("#newpwd_btn");
 
   newpwd_btn.disabled = true;
-  newpwd_btn.style.cssText = "background-color: #ACA0EB";
+  newpwd_btn.style.cssText = "background-color: #c7dbff";
 
   if (newpwd == "") {
     help_newpwd.innerText = "*비밀번호를 입력해주세요.";
@@ -87,7 +87,7 @@ const check_pwd_valid = () => {
   help_newpwd.innerText = "";
   help_checkpwd.innerText = "";
   newpwd_btn.disabled = false;
-  newpwd_btn.style.cssText = "background-color: #7F6AEE";
+  newpwd_btn.style.cssText = "background-color: #8ab3ff";
 };
 const submit_newpwd = () => {
   const newpwd = document.querySelector("#input_newpwd").value;

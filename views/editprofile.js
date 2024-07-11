@@ -86,11 +86,11 @@ async function submit_edit() {
   const nick = document.querySelector("#nickname_input").value;
   const editbtn = document.querySelector("#edit_btn");
   if (nick == "") {
-    editbtn.style.cssText = "background-color: #aca0eb";
+    editbtn.style.cssText = "background-color: #c7dbff";
     help_edit.innerText = "닉네임을 입력해주세요.";
     return;
   } else if (nick.length >= 11) {
-    editbtn.style.cssText = "background-color: #aca0eb";
+    editbtn.style.cssText = "background-color: #c7dbff";
     help_edit.innerText = "*닉네일은 최대 10자까지 작성 가능합니다";
     return;
   }
@@ -109,7 +109,7 @@ async function submit_edit() {
     const user = data.users[i];
     if (user.nickname == nick) {
       if (user.id != current_user.id) {
-        editbtn.style.cssText = "background-color: #aca0eb";
+        editbtn.style.cssText = "background-color: #c7dbff";
         help_edit.innerText = "*중복된 닉네임입니다.";
         return;
       }
@@ -128,7 +128,7 @@ async function submit_edit() {
   //     for(let i=0; i<data.users.length; i++){
   //         const user = data.users[i];
   //         if(user.nickname==nick){
-  //             editbtn.style.cssText  = 'background-color: #aca0eb';
+  //             editbtn.style.cssText  = 'background-color: #c7dbff';
   //             help_edit.innerText="*중복된 닉네임입니다.";
   //             return false;
   //         }
@@ -150,7 +150,7 @@ async function submit_edit() {
   }).then((res) => {
     if (res.ok) {
       help_edit.innerText = "";
-      editbtn.style.cssText = "background-color: #7F6AEE";
+      editbtn.style.cssText = "background-color: #8ab3ff";
       const tostMessage = document.getElementById("tost_message");
 
       //2. 토스트 메시지 노출-사라짐 함수 작성

@@ -31,7 +31,7 @@ fetch("http://localhost:8081/posts/" + id,{
                     <img class="arrow" src="/views/images/arrow.png">
                 </button>
             </div>
-            <button class="topname" onclick="goto_list()">아무 말 대잔치</button>
+            <button class="topname" onclick="goto_list()">고민이 먼지</button>
             <div class="dropdown" >
                 <button class="dropdown_btn" id="dropdown_btn "onclick="dropdown_btn()"><img class="profile" src="${user.profile}"></button>
                 <div class="dropdown_options" id="dropdown_op">

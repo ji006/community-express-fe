@@ -45,10 +45,10 @@ const check_member = () => {
 const bothcheck = () => {
   const btn_style = document.querySelector("#login_btn");
   if (check_member() == true) {
-    btn_style.style.cssText = "background-color: #7F6AEE";
+    btn_style.style.cssText = "background-color: #8ab3ff";
     btn_style.disabled = false;
   } else {
-    btn_style.style.cssText = "background-color: #ACA0EB";
+    btn_style.style.cssText = "background-color: #c7dbff";
     btn_style.disabled = true;
   }
 };
@@ -58,7 +58,7 @@ const bothcheck = () => {
 //   const email = document.querySelector("#email1").value;
 //   const password = document.querySelector("#password").value;
 //   const btn_style = document.querySelector("#login_btn");
-//   btn_style.style.cssText = "background-color: #7F6AEE";
+//   btn_style.style.cssText = "background-color: #8ab3ff";
 //   // setTimeout(() => {
 //   //         window.location.assign('/viewlist');
 //   // }, 3000);
@@ -103,7 +103,7 @@ const login = () => {
   const email = document.querySelector("#email1").value;
   const password = document.querySelector("#password").value;
   const btn_style = document.querySelector("#login_btn");
-  btn_style.style.cssText = "background-color: #7F6AEE";
+  btn_style.style.cssText = "background-color: #8ab3ff";
   fetch("http://localhost:8081/users/login", {
     method: 'POST',
     headers: {

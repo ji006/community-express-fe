@@ -32,6 +32,9 @@ app.use(cookieParser());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname+'/views/mainpage.html');
+});
 app.get('/login', (req, res) => {
   res.clearCookie('connect.sid');
   res.sendFile(__dirname+'/views/login.html');

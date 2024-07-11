@@ -1,13 +1,19 @@
 /* 폰트 추가 */
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
-
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 :root{
-    --main-bg-color: #f4f5f7;
+    --main-bg-color: #edf6ff;
     --text-color: black;
     --box-bg-color: #ffffff;
-    --btn-bg-color: #aca0eb;
+    --able-btn-color: #8ab3ff;
     --help-text-color: #ff0000;
     --box-text-color: #ffffff;
+    --disabled-btn-color: #c7dbff;
     --gray-bg-color: #d9d9d9;
 }
 body {
@@ -40,9 +46,10 @@ body {
     margin-right: 133px;
 }
 .toparrow{
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border: 0px;
+    background: bottom;
 }
 .toparrow .arrow{
     width: 100%;
@@ -51,9 +58,9 @@ body {
 .topname {
     color: black;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 32px;
-    font-family: "Hi Melody", sans-serif;
+    font-family: 'MangoDdobak-B';
     background-color: var(--main-bg-color);
     border: 0px;
 }
@@ -204,7 +211,7 @@ textarea::placeholder{
 }
 .editprofile{
     color: var(--box-text-color);
-    background-color: var(--btn-bg-color);
+    background-color: var(--disabled-btn-color);
     width: 355px;
     height: 33px;
     border: 0px;

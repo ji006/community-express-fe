@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/views/mainpage.css" />
+    <title>메인화면</title>
+  </head>
+  <body>
+    <div class="namebox">
+      <div class="name">고민이 먼지</div>
+    </div>
+    <div class="container">
+        <button class="login-button" onclick="tologin()">
+          <img src="/views/images/dust.png" alt="로그인 하러가기" class="login-image" />
+          <span class="button-text">로그인<br>하러 가기</span>
+        </button>
+        <button class="login-button" onclick="tojoin()">
+          <img src="/views/images/dust.png" alt="회원가입 하러가기" class="login-image" />
+          <span class="button-text">회원가입<br>하러 가기</span>
+        </button>
+    </div>
+    <script src="/views/mainpage.js"></script>
+  </body>
+</html>

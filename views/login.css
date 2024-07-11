@@ -1,13 +1,19 @@
 /* 폰트 추가 */
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
-
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 :root{
-    --main-bg-color: #f4f5f7;
+    --main-bg-color: #f9edff;
     --text-color: black;
     --box-bg-color: #ffffff;
-    --btn-bg-color: #aca0eb;
+    --able-btn-color: #8ab3ff;
     --help-text-color: #ff0000;
     --box-text-color: #ffffff;
+    --disabled-btn-color: #c7dbff;
 }
 body {
     display: flex;
@@ -25,6 +31,19 @@ body {
     width: 100%;
     justify-content: center;
     height: 104px;
+}
+.namebox {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.name {
+    font-size: 30px;
+    color: var(--text-color);
+    font-family: 'MangoDdobak-B';
+
 }
 .topbox{
     width: 600px;
@@ -53,10 +72,10 @@ body {
 .topname {
     color: black;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 32px;
     padding-top: 36px;
-    font-family: "Hi Melody", sans-serif;
+    font-family: 'MangoDdobak-B';
 }
 .dropdown {
     display: inline-block;
@@ -114,13 +133,17 @@ body {
 }
 .loginform{
     width: 392px;
+    height: 322px;
     margin-top: 264px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fdfaff;
+    padding: 20px;
+    border-radius: 30px;
 }
 .login{
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 38.19px;
 }
@@ -138,7 +161,7 @@ body {
 .inlogin{
     width: 349px;
     height: 33px;
-    border-radius: 4px;
+    border-radius: 35px;
     border: 1px solid;
 }
 .helptext{
@@ -152,11 +175,11 @@ body {
 }
 .submitlog{
     color: var(--box-text-color);
-    background-color: var(--btn-bg-color);
-    width: 355px;
+    background-color: var(--disabled-btn-color);
+    width: 300px;
     height: 37px;
     border: 0px;
-    border-radius: 4px;
+    border-radius: 12px;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.71px;
