@@ -149,9 +149,6 @@ const join = () => {
     headers: {
       "Content-Type": "application/json",
     },
-    //     headers: {
-    //   "Content-Type": "multipart/form-data",
-    // },
     body: JSON.stringify({
       email: joinemail,
       password: joinpwd,

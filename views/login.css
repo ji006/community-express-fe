@@ -159,10 +159,11 @@ body {
     line-height: 17.9px;
 }
 .inlogin{
-    width: 349px;
-    height: 33px;
+    width: 335px;
+    height: 17px;
     border-radius: 35px;
     border: 1px solid;
+    padding: 10px;
 }
 .helptext{
     height: 15px;
